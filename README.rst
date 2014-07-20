@@ -32,5 +32,13 @@ available decks. You should read up on the theory behind Anki_ since I
 won't repeat the why's and how's of spaced repetition here; I'm too
 lazy ;-)
 
+
+Credits
+-------
+
+* Vim_
+
+
 .. _Anki: http://ankisrs.net/
+.. _Vim: https://github.com/amikula/vim_flashcards
 
