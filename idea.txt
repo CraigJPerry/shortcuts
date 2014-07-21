@@ -1,0 +1,131 @@
+<div>Basic code completion (the name of any class, method or variable)</div>	Ctrl + Space
+<div>Smart code completion (filters the list of methods and variables by expected type)</div>	Ctrl + Shift + Space
+Complete statement<div><br /></div>	Ctrl + Shift + Enter
+Parameter info (within method call arguments)	Ctrl + P
+Quick documentation lookup	Ctrl + Q
+External Doc	Shift + F1
+Brief Info	Ctrl + mouse over code
+Show descriptions of error or warning at caret	Ctrl + F1
+<div>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</div>	Alt + Insert
+Override methods	Ctrl + O
+Type hierarchy	Ctrl + H
+Go to class	Ctrl + N
+Go to file	Ctrl + Shift + N
+Go to symbol	Ctrl + Alt + Shift + N
+Go to&nbsp;previous/next editor tab	Alt + Left/Right
+Go back to previous tool window	F12
+Go to editor (from tool window)	Esc
+Hide active or last active window	Shift + Esc
+Close active run/messages/find/... tab	Ctrl + Shift + F4
+Go to line	Ctrl + G
+Recent files popup	Ctrl + E
+Navigate back/forward	Ctrl + Alt + Left/Right
+Navigate to last edit location	Ctrl + Shift + Backspace
+Select current file or symbol in any view ("Select Target" popup)	Alt + F1
+Go to declaration	Ctrl + B or Ctrl + Click
+Go to implementation(s)	Ctrl + Alt + B
+Open quick definition lookup	Ctrl + Shift + I
+Go to type declaration	Ctrl + Shift + B
+Go to super-method/super-class	Ctrl + U
+Close active editor tab	Ctrl + F4
+Method hierarchy	Ctrl + Shift + H
+Call hierarchy	Ctrl + Alt + H
+Search everywhere	Double Shift
+Find	Ctrl + F
+Find next	F3
+Find previous	Shift + F3
+Replace	Ctrl + R
+<div>Surround with... (if..else, try..catch, for, synchronized, etc.)</div>	Ctrl + Alt + T
+Comment/uncomment with line comment	Ctrl + /
+Comment/uncomment with block comment	Ctrl + Shift + /
+Select successively increasing code blocks	Ctrl + W
+Decrease current selection to previous state	Ctrl + Shift + W
+Context info	Alt + Q
+Find Action	Ctrl + Shift + A
+Implement methods	Ctrl + I
+Show intention actions and quick-fixes	Alt + Enter
+Reformat code	Ctrl + Alt + L
+Optimize imports	Ctrl + Alt + O
+Auto-indent line(s)	Ctrl + Alt + I
+Indent/unindent selected lines	Tab / Shift + Tab
+Cut current line or selected block to clipboard	Ctrl + X or Shift + Delete
+Copy current line or selected block to clipboard	Ctrl + C or Ctrl + Insert
+Paste from clipboard	Ctrl + V or Shift + Insert
+Paste from recent buffers...	Ctrl + Shift + V
+Duplicate current line or selected block	Ctrl + D
+Delete line at caret	Ctrl + Y
+Smart line join	Ctrl + Shift + J
+Smart line split	Ctrl + Enter
+Start new line	Shift + Enter
+Toggle case for word at caret or selected block	Ctrl + Shift + U
+Select till code block end/start	Ctrl + Shift + ] / [
+Delete to word end	Ctrl + Delete
+Delete to word start	Ctrl + Backspace
+Expand/collapse code block	Ctrl + NumPad+/-
+Expand all	Ctrl + Shift + NumPad+
+Collapse all	Ctrl + Shift + NumPad-
+Go to previous/next method	Alt + Up/Down
+Move to code block end/start	Ctrl + ] / [
+File structure popup	Ctrl + F12
+Next/previous highlighted error	F2 / Shift + F2
+Edit source / View source	F4 / Ctrl + Enter
+Show navigation bar	Alt + Home
+Toggle bookmark	F11
+Toggle bookmark with mnemonic	Ctrl + F11
+Go to numbered bookmark	Ctrl + #[0-9]
+Show bookmarks	Shift + F11
+Find usages / Find usages in file	Alt + F7 / Ctrl + F7
+Highlight usages in file	Ctrl + Shift + F7
+Show usages	Ctrl + Alt + F7
+Make project (compile modifed and dependent)	Ctrl + F9
+Compile selected file, package or module	Ctrl + Shift + F9
+Select configuration and run	Alt + Shift + F10
+Select configuration and debug	Alt + Shift + F9
+Run	Shift + F10
+Debug	Shift + F9
+Run context configuration from editor	Ctrl + Shift + F10
+Step over	F8
+Step into	F7
+Smart step into	Shift + F7
+Step out	Shift + F8
+Run to cursor	Alt + F9
+Evaluate expression	Alt + F8
+Resume program	F9
+Toggle breakpoint	Ctrl + F8
+View breakpoints	Ctrl + Shift + F8
+Go to next/previous editor tab	Alt + Right/Left
+Select current file or symbol in any view	Alt + F1
+Copy	F5
+Move	F6
+Safe Delete	Alt + Delete
+Rename	Shift + F6
+Change Signature	Ctrl + F6
+Inline	Ctrl + Alt + N
+Extract Method	Ctrl + Alt + M
+Extract Variable	Ctrl + Alt + V
+Extract Field	Ctrl + Alt + F
+Extract Constant	Ctrl + Alt + C
+Extract Parameter	Ctrl + Alt + P
+Commit project to VCS	Ctrl + K
+Update project from VCS	Ctrl + T
+View recent changes	Alt + Shift + C
+‘VCS’ quick popup	Alt + BackQuote (`)
+Surround with Live Template	Ctrl + Alt + J
+Insert Live Template	Ctrl + J
+Iteration according to Java SDK 1.5 style	iter
+Check object type with instanceof and downcast it	inst
+Iterate elements of java.util.Collection	itco
+Iterate elements of java.util.Iterator	itit
+Iterate elements of java.util.List	itli
+public static final	psf
+throw new	thr
+Open corresponding tool window	Alt + #[0-9]
+Save all	Ctrl + S
+Synchronize	Ctrl + Alt + Y
+Toggle maximizing editor	Ctrl + Shift + F12
+Add to Favorites	Alt + Shift + F
+Inspect current file with current profile	Alt + Shift + I
+Quick switch current scheme	Ctrl + BackQuote (`)
+Open Settings dialog	Ctrl + Alt + S
+Open Project Structure dialog	Ctrl + Alt + Shift + S
+Switch between tabs and tool window	Ctrl + Tab
