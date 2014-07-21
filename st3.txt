@@ -1,0 +1,88 @@
+Navigate backwards through history	Ctrl + Alt + [
+Navigate forwards through history	Ctrl + Alt + ]&nbsp;
+Navigate to beginning of history	Ctrl + Alt + Shft + [
+Navigate to end of history	Ctrl + Alt + Shft + ]&nbsp;
+Merge selected version with current version	Ctrl + Alt + Shft + M&nbsp;
+Build file	Ctrl + B&nbsp;
+Test file	Ctrl + Shft + B
+Open command palette	Ctrl + Shft + P&nbsp;
+Save file	Ctrl + S
+Save file as	Ctrl + Shft + S &nbsp;
+Copy selection or whole line	Ctrl + C
+Paste and indent	Ctrl + V
+Cut selection or whole line	Ctrl + X
+Replace in multiple files	Ctrl + Shft + F
+Duplicate line	Ctrl + Shft + D&nbsp;
+Join next line with current line	Ctrl + J&nbsp;
+Delete to the end of line	Ctrl + K &nbsp; &nbsp;+ K&nbsp;
+Delete to start of line	Ctrl + K &nbsp; &nbsp;+ Bksp
+Delete line	Ctrl + Shft + K&nbsp;
+Transpose letters adjacent to cursor	Ctrl + T
+Soft undo	Ctrl + Shft + U
+Redo	Ctrl + Shft + Y&nbsp;
+Undo	Ctrl + Shft + Z&nbsp;
+Increase tab	Ctrl + [&nbsp;
+Decrease tab	Ctrl + ]
+Toggle comments on selected lines	Ctrl + Shft + /
+Insert line after	Ctrl + Entr
+Insert line before	Ctrl + Shft + Entr
+Move line up	Ctrl + Shft + Up&nbsp;
+Move line down	Ctrl + Shft + Down
+Delete to beginning of word	Ctrl + Bksp
+Delete to end of word	Ctrl + Del
+Find in file	Ctrl + F
+Find next	Ctrl + F3&nbsp;
+Find previous	Ctrl + Shft + F3
+Toggle case sensitivity in Find	Ctrl + F, &nbsp; &nbsp; Alt &nbsp;+ C&nbsp;
+Toggle RegEx in Find	Ctrl + F, &nbsp; &nbsp; Alt &nbsp;+ R
+Toggle whole word matching in Find	Ctrl + F, &nbsp; &nbsp; Alt &nbsp;+ W
+Find in files	Ctrl + Shft + F
+Replace in file	Ctrl + H
+Toggle preserve case in Replace	Ctrl + H, &nbsp; &nbsp; Alt &nbsp;+ A&nbsp;
+Move to cursor	Ctrl + K + C
+Fold to level 1-9	Ctrl + K + 1-9
+Unfold all	Ctrl + K + J
+Jump to matching bracket	Ctrl + M
+Move cursor to beginning of line.	Home
+Move cursor to end of line.	End&nbsp;
+Go to line number	Ctrl + G
+Go to anything	Ctrl + P&nbsp;
+Go to function	Ctrl + R
+Go to word	Ctrl + ;
+Open command pallette	Ctrl + Shft + P
+Next bookmark	F5&nbsp;
+Previous bookmark	Shft + F5
+Toggle bookmark	Ctrl + F5
+Select all bookmarks	Alt &nbsp;+ F5
+Clear all bookmarks	Ctrl + Shft + F5
+Fold code	Ctrl + Shft + [&nbsp;
+Unfold code	Ctrl + Shft + ]
+Select all	Ctrl + A
+Repeat multi-­select word	Ctrl + D&nbsp;
+Select all instances of word	Alt &nbsp;+ D&nbsp;
+Expand selection to indentation	Ctrl + Shft + J
+Skip multi-­select word	Ctrl + K&nbsp;
+Select current line	Ctrl + L
+Select everything within the current brackets	Ctrl + Shft + M
+Undo selection and actions	Ctrl + Shft + U
+Expand selection to scope	Ctrl + Shft + Spce
+Make multiple selections with mouse	Ctrl + Clck
+Toggle side-bar	Ctrl + K + B
+Toggle mini-map	Ctrl + K + M&nbsp;
+Open new tab	Ctrl + N
+Open new window	Ctrl + Shft + N
+Switch to recent project	Ctrl + Alt + P
+Switch to 1 column and 1 row layout	Alt &nbsp;+ Shft + 1
+Switch to 2 column layout	Alt &nbsp;+ Shft + 2&nbsp;
+Switch to 3 column layout	Alt &nbsp;+ Shft + 3
+Switch to 4 column layout	Alt &nbsp;+ Shft + 4&nbsp;
+Switch to 2 column and 2 row layout	Alt &nbsp;+ Shft + 5
+Switch to 2 row layout	Alt &nbsp;+ Shft + 8&nbsp;
+Switch to 3 row layout	Alt &nbsp;+ Shft + 9
+Focus on group 1	Ctrl + Shft + 1
+Focus on group 2	Ctrl + Shft + 2
+Focus on group 3	Ctrl + Shft + 3
+Focus on group 4	Ctrl + Shft + 4
+Switch to the next tab	Ctrl + Tab
+Switch to the previous tab	Ctrl + Shft + Tab
+Distra­ction free mode	Shft + F11
