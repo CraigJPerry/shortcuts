@@ -1,0 +1,46 @@
+s	Focus command bar, search all repositories	Site Wide
+/	Focus command bar, search the current repository	Site Wide
+g n	Go to Notifications	Site Wide
+?	Bring up this help dialog	Site Wide
+j	Move selection down	Site Wide
+k	Move selection up	Site Wide
+x	Toggle selection	Site Wide
+o / enter	Open selection	Site Wide
+g c	Go to Code	Repositories
+g i	Go to Issues	Repositories
+g p	Go to Pull Requests	Repositories
+g w	Go to Wiki	Repositories
+t	Activates the file finder	Source code browsing
+l	Jump to line	Source code browsing
+w	Switch branch/tag	Source code browsing
+y	Expand URL to its canonical form	Source code browsing
+i	Show/hide all inline notes	Source code browsing
+ctrl enter	Submit comment	Issues
+ctrl shift p	Preview comment	Issues
+ctrl shift l	Go fullscreen	Issues
+c	Create issue	Issues
+l	Create label	Issues
+u	Back to issues	Issues
+/	Focus issues search	Issues
+r	Reply (quoting selected text)	Issues
+ctrl enter	Submit comment	Browsing commits
+escape	Close form	Browsing commits
+p	Parent commit	Browsing commits
+o	Other parent commit	Browsing commits
+y	Expand URL to its canonical form	Commit list
+e / y	Mark as read	Notifications
+shift m	Mute thread	Notifications
+r	Reply (quoting selected text)	Pull request list
+o / enter	Open issue	Pull request list
+ctrl enter	Submit comment	Pull request list
+ctrl shift p	Preview comment	Pull request list
+ctrl shift l	Go fullscreen	Pull request list
+← / h	Scroll lef	Network Graph
+→ / l	Scroll right	Network Graph
+↑ / k	Scroll up	Network Graph
+↓ / j	Scroll down	Network Graph
+t	Toggle visibility of head labels	Network Graph
+shift ← / shift h	Scroll all the way left	Network Graph
+shift → / shift l	Scroll all the way right	Network Graph
+shift ↑ / shift k	Scroll all the way up	Network Graph
+shift ↓ / shift j	Scroll all the way down	Network Graph
