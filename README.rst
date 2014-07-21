@@ -21,9 +21,9 @@ app consumes the decks in the following format:
 
 * 1 deck per application (= 1 file per application)
 * 1 (tab separated) line per card
-  * Field 1: Question
-  * Field 2: Answer
-  * Field 3: Category
+ * Field 1: Question
+ * Field 2: Answer
+ * Field 3: Category
 
 Anki_ runs on Linux, Windows, Mac, Android, iOS or via their website.
 
