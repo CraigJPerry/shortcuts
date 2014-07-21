@@ -1,0 +1,100 @@
+What does <b>DRCS</b> stand for?	Distributed Revision Control System.
+What does <b>SCM</b> stand for?	Source Code Management system.
+Who did design and develop Git initially?	Linus Torvalds.
+What are the characteristics of a <b>distributed version control system (DVCS)</b>?	A distributed version control system has no central server which stores the data. Every local copy contains the full history of the source code.
+Does the use of a <b>DVCS</b> require a central code repository?	No.
+Where does Git <b>commit</b> file changes to?	To the local repository.
+What happens when you <b>clone</b> a repository with Git?	An exact copy of the repository is created locally.
+Does the local clone of a remote repository include the complete history of the source code?	Yes.
+What's the meaning of <b>master branch</b>?	The "master" in Git is the default branch, which generally represents the most stable code.
+Which shell command will print the&nbsp;<b>version number of the&nbsp;installed Git</b>?	<pre>git --version</pre>
+Which command will <b>initialize a new, empty repository</b> in the current working directory?	<pre>git init</pre>
+Which commands are used to configure the local user's name and email address being used when committing to Git repositories?	<pre>git config --global user.name "Your Name"</pre><br /><pre>git config --global user.email "your@email.com"</pre>
+What is a <b>commit</b>?	A commit is a pointer to a spot&nbsp;(revision)&nbsp;on the code history.
+What does this command do:&nbsp;<b>git add . &nbsp;</b>	It adds everything inside the current working directory to the local repository.
+Which commands are needed to <b>add</b> <b>all .js files and the index.php</b> file to the local Git repository?	<pre>git add *.js</pre><br /><pre>git add index.php</pre>
+Which command will <b>commit</b> to the local repository, including a <b>commit message</b>?	<pre>git commit -m "some commit message over here"</pre>
+Which command prints&nbsp;&nbsp;the <b>current state</b> of your code?	<pre>git status</pre>
+How are Git commits <b>identified</b>?	Instead of numbering commits, Git uses the code contents of the commit to create a unique, 40 character SHA-1 hash.
+Which Git command is used to <b>list the existing branches</b>?	<pre>git branch</pre> Ommitting all options to the "git branch" command, will list the existing branches.
+Which command <b>creates</b> a new branch?	<pre>git branch nameofmynewbranch</pre>
+Which command will switch to the branch "myotherbranch"?	<pre>git checkout myotherbranch</pre>
+Which command is needed to&nbsp;create a branch and switch to it in one swoop?	<pre>git checkout -b branch name</pre>
+Which command will join everything from the branch "bigIdea" to be part of the "master" branch?	<pre>git checkout master</pre><br /><pre>git merge bigIdea</pre>
+Which command will delete (even) an unmerged branch?	<pre>git branch -D myBranch</pre>
+Which command will delete only a merged branch?	<pre>git branch -d myBranch</pre>
+Does a branch created in a repository,&nbsp;which was cloned from another repository, need to have a&nbsp;counterpart in the&nbsp;remote repository?<br /> <br /> 	No it doesn't.
+Which two steps are neccessary to persist modifications on a file in the repository?<br />	1. Staging (mark the file to be relevant for Git) = adding the file to the index.<br />2. Commiting: storing the changes in the Git repository.
+What does the term <b>staging</b> describe?	Marking changes as relevant for the version control, by adding them to the index.
+What is a <b>Revision</b>?<br />	A revision represents a version of the source code. Git identifies revisions with SHA-1 IDs using a commit object. SHA-1 IDs are 160 bits long and are represented in hexadecimal. The latest version can be addressed via HEAD, the version before that via HEAD~1 and so on.
+In which file does Git store <b>global settings</b>?<br />	In the <b>.gitconfig</b> file.
+Where is the <b>.gitconfig</b> file located?<br />	In the user home directory.
+Which command displays the existing <b>global Git settings</b>?<br />	<pre>git config --list</pre>
+Which file tells Git which files and directories to <b>ignore</b>?<br />	<pre>.gitignore</pre>
+What is the difference between <b>local .gitignore</b> and <b>global .gitignore</b> files, regarding visibility?<br />	The local .gitignore file can be committed into the Git repository and therefore is visible to everyone who clones the repository. The global .gitignore file is only locally visible.
+How are <b>empty directories</b> handled under Git version control / by common practice?	Git ignores empty directories, i.e. it does not put them under version control. Common practice for tracking an empty directory though, is to put a file called <b>.gitkeep</b> into such a directory.
+Which command shows<b> commit logs</b>, what do logs contain per commit?<br />	<pre>git log</pre> 1. SHA-1 identifier<br />2. author + email<br />3. date + time of the commit<br />4. commit message
+Which command displays all <b>changes since the last commit</b>?<br />	<pre>git diff</pre>
+How can you <b>add and commit</b> all changes with a one-line command?<br />	By concatenating add and commit via &&:<br><pre>git add . &amp;&amp; <br>git commit -m <br>"more changes"</pre>
+Which command displays the changes in a <b>specific commit</b>?	<pre>git show &lt;commit_id&gt;</pre>
+1. Which command displays the <b>change history</b> of a specific file?<br /><div>2. Which parameter will <b>display the diffs of each commit</b>?</div><div>3. Which parameter will <b>show the entire history</b>?</div>	<pre>1. git log [filename]</pre> <pre>2. git log -p filename</pre> <pre>3. git log --follow -p filename</pre>
+Which command displays which commit and author modified a file on a line by line basis?	<pre>git blame [filename]</pre>
+Which command / parameter changes the last commit message?<br />	<pre>git commit --amend -m "My changed commit message"</pre>
+Which command deletes a file from the working directory and at the same time marks it for the next commit?<br />	<pre>git -rm filename.ext</pre>
+Which command displays the existing defined <b>remote repositories</b>?<br />	<pre>git remote</pre>
+1. Which command <b>reverts</b> changes in the working directory,&nbsp;<div>2. how is a dry-run of reverting changes done?<br /></div>	<pre>1. git clean -f</pre> <pre>2. git clean -n</pre>
+How can you <b>revert a deleted or changed file that has not yet been added to the index</b>?<br />	By checking it out again: <pre>git checkout filename</pre>
+How can you checkout older revisions of your source code?<br />	Via chacking out using the specific commit id: <pre>git checkout commit_id</pre>
+How can you find out a specific <b>commit ID</b>?<br />	<pre>git log</pre>
+Which command removes an added file from the index again?<br />	<pre>git reset filename.ext</pre>
+How can all changes of a commit be reverted and a new commit be recorded, which documents that the other commit was reverted?<br />	<pre>git revert commit_id</pre>
+Which command removes new files which are still untracked?<br />	<pre>git clean -f -d</pre>
+What does the command <b>git reflog</b>&nbsp;do?<br />	It displays the history of the complete changes of the current branch, based on the HEAD revision.
+Does <b>git reflog</b>&nbsp;also contain deleted commits?	Yes.
+Which command lists the <b>available tags</b>?<br />	<pre>git tag</pre>
+Which command creates a <b>new tag</b> <b>with a description</b>?	<pre>git tag version1.6 -m 'version 1.6'</pre>
+Which command will <b>check out a specific tag</b>?	<pre>git checkout &lt;tag_name&gt;</pre>
+How is the <b>default branch</b> called in Git?<br />	Master.
+Which command / parameter <b>lists all branches, including remote</b> branches?	<pre>git branch -a</pre>
+Which command <b>creates a new branch and switches to it</b>?	The checkout command, with the -b parameter:<br><pre>git checkout -b bugreport12</pre>
+Which command would <b>delete </b>the "testing" branch?<br />	<pre>git branch -d testing</pre>
+What does the term <b>merging</b>&nbsp;describe?<br />	The process of combining changes of two branches.
+Which command <b>merges differences</b> of the "testing" branch into the current active branch?<br />	<pre>git merge testing</pre>
+What is a <b>merge conflict</b>?<br />	A merge conflict occurs, if two people have modified the same content and Git cannot automatically determine how both changes should be applied.
+Which default Git tool exists for <b>resolving conflicts</b>, which command starts it?<br />	The Git merge tool: <pre>git mergetool</pre>
+What does the <b>rebase</b>&nbsp;command do?<br />	Combining several commits into one commit.
+Which command would <b>combine</b> the last seven commits? How does this work?	<pre>git rebase -i HEAD~7</pre><br>-It will open the preferred editor for editing the commit message.
+What functionality does the <b>stash</b> command add?<br />	Saving the current uncommmitted changes and&nbsp;checkout&nbsp;the last committed revision. This allows pulling-in the latest changes or to develop an urgent fix. Afterwards the stashed changes can be restored, which will reapply the changes to the current version of the source code.<br /> 
+What's the rule of thumb, concerning the <b>stash</b>&nbsp;command?<br />	It should be the exception to using Git. Typically you would create new branches for new features and switch between branches.
+What are the two command to:<br /><b>1. create a stash</b> with uncommitted changes<br /><b>2. reapply the stashed changes</b> <b>and</b> <b>delete the stash </b>from the list of stashes<br />	<pre>1. git stash</pre> <pre>2. git stash pop</pre><pre></pre>
+Which command displays <b>which commit deleted a specific file</b>?<br />	<pre>git log -- [filename]</pre>
+What is the <b>--</b> option in <b>git log</b>&nbsp;used for?<br />	To see the commit history for a file, even if the file has been deleted.
+What is a <b>patch file</b>?<br />	A text file that contains changes to the source code.
+What is an <b>alias</b> in Git? What limitations apply in <b>msysGit</b> (2012)	An alias in Git allows you to setup your own Git command. E.g. you can define an alias which is a short form of your own favorite commands or you can combine several commands with an alias.<br>msysGit does not completely support defining an alias.
+Which command will define an alias "add-commit", which combines <b>git add . -A</b> and <b>git commit -m</b>.?	<pre class="programlisting">git config --global alias.add-commit <span class="hl-string">'!git add . -A &amp;&amp; git commit'</span></pre>
+Which command will display <b>who created / modified a file</b>?	<pre>git blame filename</pre>
+Name two <b>transport types</b>&nbsp;that are supported protocols for Git checkouts	The native Git protocol is <b>git</b>, alternatively the <b>http</b> protocol is also supported.
+What happens in regards to naming of the original repository, when <b>cloning</b> a remote repository?<br />	The original repository will automatically be called "origin".
+What is required for <b>pushing changes</b> to a remote repository?<br />	Having write access.
+What is the possibility of using the <b>HTTP protocol</b> with Git especially helpful for?	If a firewall blocks all requests other than http.
+Which are the two variants of <b>ssh keys</b>?<br />	Public and private.
+1. What command / tool generates <b>ssh keys</b> when using the command line?<br />2. What are the correct filenames of the keyfiles?	1. ssh-keygen -t&nbsp; rsa -C "youremail@youremail.com"<br />2. private key: id_rsa and public key: id_rsa.pub
+What is <b>RSA</b>, what does the abbreviation stand for?<br />	An algorithm for public-key cryptography, it stands for the names of it's inventors: Rivest, Shamir and Adleman.
+What does the command do: <b>git reset --soft HEAD~</b>	Undo the last commit. The files touched will be back on stage again.
+What does <b>HEAD~</b> stand for?	The first parent of a "branch"
+What does <b>git reset --hard HEAD</b>&nbsp;do? (instead of HEAD it could be also a commit SHA-1 or another reference)	Undo the last commit, unstage files AND undo any changes in the working directory.
+which parameter allows you to <b>stage an ignored file</b>?	<pre>--force</pre>
+What is the starting point of the scope of <b>.gitignore</b> files?	They define ignore definitions for the whole directory tree, starting from the point where the .gitignore file itself resides.
+Which Git command <b>newly stages a specific file</b>?	<pre>git add &lt;filename&gt;</pre>
+Which command will <b>undo the checking-in of an unwanted commit</b> (remove the respective file from the index), but keep the changes in the filesystem?	<pre>git reset HEAD &lt;filename&gt;</pre>
+What's the difference between <b>git pull</b> and <b>git fetch</b>? (<span style=" font-style: normal; font-weight: normal;">In the simplest terms)</span>	git pull does a git fetch followed by a git merge.
+What's the difference between <b>git log</b> and <b>git whatchanged</b>? (in their simplest form)	"git log" shows each commit (sha, author, date, message) whereas "git whatchanged" shows the commit plus files that changed.
+What is the difference between <b>git commit</b> and <b>git push</b>?	<b>commit:</b> adding changes to the repository.<div><b>push</b>: to transfer the last commit(s) to a remote server</div>
+What is the <b>head</b> in Git?	The head is a pointer to the current branch, which is in turn the last commit you made or checked out into your working directory.
+What is the <b>index</b> in Git?	It's a snapshot of changes contained in your next commit, this way it's the "<b>proposed next commit</b>".
+What does <b>head^</b> mean?	It means the first parent of the tip of the current branch.
+What is the difference between <b>head~</b> and <b>head^</b> ?	&nbsp;~&lt;n&gt; means the revision that is the &lt;n&gt;th generation ancestor of the named revision, following only the first parents.<div>^&lt;n&gt; means the &lt;n&gt;th parent of that revision.</div>
+Which steps are neccessary to <b>overwrite all local changes</b> with the most recent files from the remote repository?	<b>Git revert</b> followed by <b>git pull</b>.
+What is the difference between:<br><pre>git checkout -f</pre> and <pre>git reset --hard HEAD</pre>?	None, with these parameters they do exactly the same.
+Which command "<b>un-tracks</b>" (removes from index) and deletes an already tracked file?	git rm --cached filename
+1. Which command changes the message of the last commit, <br>2. What is the limitation?<br>	1. <code>git commit --amend -m "this message was changed"<br></code>2. This only works before the commit has been pushed.<br>
